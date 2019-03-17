@@ -1,0 +1,467 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#second,
+#third,
+#fourth {
+	display: none;
+}
+
+.bg {
+	width: 375px;
+	height: 667px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.appear {
+	opacity: 0;
+}
+
+.next {
+	width: 25.5px;
+	height: 25px;
+	background: url(img/next.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 15px;
+	left: 179px;
+	cursor: pointer;
+}
+
+/* first */
+.first {
+	background: url(img/first.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+.loading {
+	position: absolute;
+	left: 150px;
+	top: 442px;
+}
+
+.progress {
+	width: 100%;
+	position: absolute;
+	top: 469px;
+	text-align: center;
+}
+
+/* second */
+.second {
+	background: url(img/second.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.sec-left {
+	width: 88.5px;
+	height: 85.5px;
+	background: url(img/left.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 176.5px;
+	left: 107px;
+	animation: rotate 2s linear infinite;
+}
+
+.sec-right {
+	width: 66.5px;
+	height: 65px;
+	background: url(img/right.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 197px;
+	left: 230.5px;
+	animation: rotate 2s linear infinite;
+}
+
+.sec-text-p {
+	width: 100%;
+	position: absolute;
+	top: 317.5px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.sec-text-h {
+	position: absolute;
+	top: 312.5px;
+	left: 75px;
+	font-size: 40px;
+	color: #ffcf10;
+}
+
+.sec-text-f {
+	position: absolute;
+	top: 433px;
+	right: 90px;
+	font-size: 40px;
+	color: #ffcf10;
+}
+
+.sec-text-p>p {
+	opacity: 0;
+}
+
+.sec-text-p-1 {
+	animation: appear 1500ms ease-out forwards;
+}
+
+.sec-text-p-2 {
+	animation: appear 1500ms ease-out 1s forwards;
+}
+
+.sec-text-p-3 {
+	animation: appear 1500ms ease-out 2s forwards;
+}
+
+.sec-text-p-4 {
+	animation: appear 1500ms ease-out 3s forwards;
+}
+
+.sec-text-p-5 {
+	animation: appear 1500ms ease-out 4s forwards;
+}
+
+.sec-text-p-6 {
+	animation: appear 1500ms ease-out 5s forwards;
+}
+
+@keyframes next {
+	from {
+		bottom: 15px;
+	}
+
+	to {
+		bottom: 10px;
+	}
+}
+
+.sec-text-appear {
+	animation: appear 0s 6s forwards;
+}
+
+.sec-text-appear-next {
+	animation: next 1500ms 6s infinite;
+}
+
+/* third */
+.third {
+	background: url(img/third.png);
+	background-size: 100%;
+	position: relative;
+}
+
+@keyframes up {
+	from {
+		right: -375px;
+	}
+
+	to {
+		right: 0px;
+	}
+}
+
+@keyframes down {
+	from {
+		left: -375px;
+	}
+
+	to {
+		left: 0px;
+	}
+}
+
+.up {
+	width: 375px;
+	height: 424.5px;
+	background: url(img/up.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: -375px;
+	animation: up 3s forwards;
+}
+
+.down {
+	width: 375px;
+	height: 667px;
+	background: url(img/down.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: -375px;
+	animation: down 3s 4s forwards;
+}
+
+.uptext {
+	width: 176.5px;
+	height: 108.5px;
+	background: url(img/uptext.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 62px;
+	left: 39.5px;
+	opacity: 0;
+	animation: appear 1500ms ease-out 3s forwards;
+}
+
+.downtext {
+	width: 189.5px;
+	height: 97px;
+	background: url(img/dowmtext.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 147px;
+	right: 21.5px;
+	opacity: 0;
+	animation: appear 1500ms ease-out 7s forwards;
+}
+
+.third-appear {
+	animation: appear 0s 8s forwards;
+}
+
+.third-appear-next {
+	animation: next 1500ms 8s infinite;
+}
+
+/* fourth */
+.fourth {
+	background: url(img/fourth.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+@keyframes left {
+	form {
+		left: -169px;
+	}
+
+	to {
+		left: 0px;
+	}
+}
+
+@keyframes right {
+	form {
+		right: -293px;
+	}
+
+	to {
+		right: 0px;
+	}
+}
+
+@keyframes top {
+	form {
+		top: -334px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+.fourth-bg {
+	width: 375px;
+	height: 667px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.fourth-1 {
+	background: url(img/1.png) no-repeat;
+	background-size: 100%;
+	top: -334px;
+	animation: top 1500ms ease-out 2s forwards;
+}
+
+.fourth-2 {
+	background: url(img/2.png) no-repeat;
+	background-size: 100%;
+	left: -169px;
+	animation: left 1500ms ease-out forwards;
+}
+
+.fourth-3 {
+	background: url(img/3.png) no-repeat;
+	background-size: 100%;
+	right: -293px;
+	animation: right 1500ms ease-out 1s forwards;
+}
+
+.fourth-4 {
+	background: url(img/4.png) no-repeat;
+	background-size: 100%;
+	left: -169px;
+	animation: left 1500ms ease-out forwards;
+}
+
+.fourth-5 {
+	background: url(img/5.png) no-repeat;
+	background-size: 100%;
+	top: -334px;
+	animation: top 1500ms ease-out 2s forwards;
+}
+
+.fourth-6 {
+	background: url(img/6.png) no-repeat;
+	background-size: 100%;
+	right: -293px;
+	animation: right 1500ms ease-out 1s forwards;
+}
+
+.fourth-7 {
+	background: url(img/7.png) no-repeat;
+	background-size: 100%;
+	left: -169px;
+	animation: left 1500ms ease-out forwards;
+}
+
+.fourth-8 {
+	background: url(img/8.png) no-repeat;
+	background-size: 100%;
+	opacity: 0;
+	animation: appear 1500ms ease-out 3500ms forwards;
+}
+
+.fourth-form {}
+
+.fourth-form>input {
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 15px;
+	width: 135.5px;
+	height: 28px;
+	position: absolute;
+	top: 520.5px;
+	left: 40px;
+	border: 2.5px solid #000000;
+	border-radius: 5.5px;
+	box-shadow: 5.5px 7px #e5e5e5;
+	opacity: 0;
+	animation: appear 1500ms ease-out 4500ms forwards;
+}
+
+.fourth-job {
+	width: 146px;
+	height: 40px;
+	background: url(img/11.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 520.5px;
+	left: 206.5px;
+}
+#fourth-job{
+	opacity: 0;
+	animation: appear 1500ms ease-out 4500ms forwards;
+	cursor: pointer;
+}
+
+.fourth-select {
+	width: 146px;
+	height: 100px;
+	background: url(img/12.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 461px;
+	left: 206.5px;
+}
+
+.fourth-button {
+	width: 307px;
+	height: 53px;
+	background: url(img/9.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 41.5px;
+	left: 40px;
+	cursor: pointer;
+	opacity: 0;
+	animation: appear 1500ms ease-out 4500ms forwards;
+}
+
+.fourth-button:active {
+	background: url(img/10.png) no-repeat;
+	background-size: 100%;
+}
+
+.fourth-bg-1 {
+	background: url(img/fourth-1.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	width: 375px;
+	height: 667px;
+	cursor: pointer;
+}
+.sbz{
+	width: 140px;
+	height: 29px;
+	position: absolute;
+	top: 463px;
+	left: 206.5px;
+	cursor: pointer;
+}
+.xs{
+	width: 140px;
+	height: 28.5px;
+	position: absolute;
+	top: 492px;
+	left: 206.5px;
+	cursor: pointer;
+}
+.xz{
+	width: 140px;
+	height: 33px;
+	position: absolute;
+	top: 520.5px;
+	left: 206.5px;
+	cursor: pointer;
+}
+.fourth-job-sbz{
+	width: 146px;
+	height: 40px;
+	background: url(img/sbz.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 520.5px;
+	left: 206.5px;
+}
+.fourth-job-xs{
+	width: 146px;
+	height: 40px;
+	background: url(img/xs.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 520.5px;
+	left: 206.5px;
+}
+
+
+
+
