@@ -9,6 +9,11 @@
 #fifth{
 	display: none;
 }
+.yjj{
+	width: 0;
+	height: 0;
+	display: none;
+}
 
 .bg {
 	width: 375px;
