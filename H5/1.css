@@ -5,7 +5,8 @@
 
 #second,
 #third,
-#fourth {
+#fourth,
+#fifth{
 	display: none;
 }
 
@@ -461,7 +462,95 @@
 	top: 520.5px;
 	left: 206.5px;
 }
-
-
-
-
+/* fifth-1 */
+.fifth-1{
+	background: url(img/fifth.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.text{
+	height: 39px;
+	position: absolute;
+	top: 215px;
+	right: 13px;
+	line-height: 39px;
+	font-size: 39px;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+}
+.screen{
+	height: 39px;
+	position: absolute;
+	top: 267.5px;
+	right: 13px;
+	line-height: 39px;
+	font-size: 39px;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+}
+.row{
+	height: 98px;
+	position: absolute;
+	left: 8px;
+}
+.row-1{
+	top: 320.5px;
+}
+.row-2{
+	top: 420.5px;
+}
+.row-3{
+	top: 520.5px;
+}
+.col{
+	margin: 1px;
+	display: inline-block;
+	width: 87px;
+	height: 98px;
+	line-height: 98px;
+	font-size: 25px;
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+}
+.col-end{
+	background-color: #ffcf10;
+}
+.col-xz{
+	background-color: #b1ad99;
+}
+#wdbg{
+	display: none;
+	width: 91px;
+	height: 98px;
+	background: url(img/wdbg.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 520.5px;
+	left: 274px;
+}
+#tanc{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+.tancy{
+	background: url(img/tancy.png) no-repeat;
+	background-size: 100%;
+}
+.tancl{
+	background: url(img/tancl.png) no-repeat;
+	background-size: 100%;
+}
+.tancc{
+	background: url(img/tancc.png) no-repeat;
+	background-size: 100%;
+}
+#tanctext{
+	position: absolute;
+	top: 210px;
+	left: 102px;
+	font-size: 20px;
+}
